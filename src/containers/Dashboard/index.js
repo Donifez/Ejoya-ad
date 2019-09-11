@@ -88,10 +88,7 @@ class DashBoardIndex extends Component {
 							<span className="wallet" />
 							Artist
 						</NavLink>
-						<NavLink to="/allUser" className="heading-6-1 font-weight--5">
-							<span className="setting" />
-							Alluser
-						</NavLink>
+						
 						<NavLink to={`${url}/artist/marketing-page`} className="signout-btn heading-6-1 font-weight--5">
 							<FiTarget className="signout" />
 							Market
