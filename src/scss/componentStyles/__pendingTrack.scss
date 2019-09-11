@@ -13,9 +13,9 @@
 .artistDetails{
 margin:0 auto;
 margin-top:-15rem;
-margin-left:5rem;
+// margin-left:5rem;
 display:grid;
-width:90%;
+width:100%;
 grid-template-columns:3fr 1fr;
 @include respond(tab-land){
   margin-top:0;
@@ -55,11 +55,11 @@ margin-top:17rem;
 }
 .artistInfo h1{
   margin-top:-3rem;
-font-size:4rem;
+font-size:3rem;
 font-weight:300;
 font-family: var(--font-display-2);	
 @include respond(tab-land){
-  font-size:2.5rem;
+  font-size:2rem;
   margin-top:0rem;
   margin-left:0rem;
   text-align: center;
@@ -75,7 +75,7 @@ font-family: var(--font-display-2);
 
 .infoTable {
   font-family:var(--default-font);
-	width:90%;
+	width:100%;
   box-sizing:border-box;
 	border: 1px solid rgba(212,222,226,0.31);
 	border-radius: 4px;
@@ -96,7 +96,7 @@ font-family: var(--font-display-2);
 .tableTitle{
   text-align:left;
   color:var(	--grey-color-1);
-  padding:2rem 3rem;
+  padding:1rem 3rem;
   font-weight:500;
   font-size:1.8rem;
   border-bottom:1px solid #D4DEE2;
@@ -115,7 +115,7 @@ font-family: var(--font-display-2);
 .infoTable td{
   table-layout: fixed;
   text-align:left;
-  padding:2rem 3rem;
+  padding:1rem 3rem;
   font-size:1.4rem;
   border-bottom:1px solid #D4DEE2;
   //  @include respond (android-phone){
@@ -166,9 +166,11 @@ font-family: var(--font-display-2);
   //   } 
 }
 .searchInput{
-  margin-top:15rem;
+  margin-top:13rem;
+  height: 308px;	
+  width: 208px;
   // margin-left:75rem;
- height:3rem;
+ height:5rem;
 //   padding:1.5rem 2rem;o;
 width:auto;
   text-align: center;

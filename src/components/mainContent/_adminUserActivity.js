@@ -8,11 +8,11 @@ import "../../scss/abstracts/_variables.scss";
 export default () => (
 	<>
 		<div className="mainContent">
-				<div className="artistDetails">
+				<div className="artistDetail">
           <div className="artistCoverArt">
           <img src={Profile} alt="Cover ARt" />
           </div>
-          <div className="artistInfo">
+          <div className="artistInf">
             <h1>Artist Name</h1>
             <h5>email@artist.com</h5>
           </div>

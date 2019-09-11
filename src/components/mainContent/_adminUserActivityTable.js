@@ -4,10 +4,10 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: "" },
-            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
-            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
-            { info:  'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""}
+            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: "" },
+            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
+            {  Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
+            { Description:  'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""}
          ]
       }
    }
@@ -22,10 +22,10 @@ class Table extends React.Component {
    renderTableData() {
       return this.state.details.map((detail, index) => {
          const cps=<div className="cps"/>
-         const { info, date, region } = detail 
+         const { Description, date, region } = detail 
          return (
             <tr className="otherInfo">
-               <td><span className="artistBold">Artist Name </span>{info}</td>
+               <td><span className="artistBold">Artist Name </span>{Description}</td>
                <td>{date}</td>
                <td>{region}</td>
                <td>{cps}</td>
@@ -37,9 +37,9 @@ class Table extends React.Component {
    render() {
       return (
          <div>
-            <table className='infoTable'>
+            <table className='infoTabl'>
                <tbody>
-                  <tr className="detailsTitle">{this.renderTableHeader()}</tr>
+                  <tr className="detailsTit">{this.renderTableHeader()}</tr>
                   {this.renderTableData()}
                </tbody>
             </table>

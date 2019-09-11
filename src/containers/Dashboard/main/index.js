@@ -4,7 +4,7 @@ import "../../../scss/base/_base.scss";
 import {FaArrowRight, FaCaretDown, FaMusic} from "react-icons/fa";
 import Chart from "./Chart";
 import PieChart from "./Pie";
-import NigerianMap from "../../../../public/inspect/nigeria.svg"
+// import NigerianMap from "/inspect/nigeria.svg"
 
 class ChartIndex extends Component {
 

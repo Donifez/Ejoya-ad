@@ -7,6 +7,7 @@ import Activity from "../../components/mainContent/_adminUserActivity.js";
 import Royalties from "../../components/mainContent/_paidRoyalties";
 import Pending from "../../components/mainContent/_pendingTrack";
 import Catalogue from "./catalogue/index";
+import Dashboard from "./main";
 import UserActivity from "./users/index";
 import Artist from "../../artiste";
 import AllUser from ".././../allUser";
@@ -78,6 +79,10 @@ class DashBoardIndex extends Component {
 							<span className="setting" />
 							Catalogue
 						</NavLink>
+						{/* <NavLink to="/dashboard" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Dashboard
+						</NavLink> */}
 						<NavLink to="/users" className="heading-6-1 font-weight--5">
 							<span className="setting" />
 							Users
@@ -92,14 +97,14 @@ class DashBoardIndex extends Component {
 							<span className="setting" />
 							Alluser
 						</NavLink>
-						<NavLink to={`${url}/artist/marketing-page`} className="signout-btn heading-6-1 font-weight--5">
+						{/* <NavLink to={`${url}/artist/marketing-page`} className="signout-btn heading-6-1 font-weight--5">
 							<FiTarget className="signout" />
 							Market
-						</NavLink>
-						<NavLink to={`${url}/artist/marketing-page`} className="mini-admin">
+						</NavLink> */}
+						{/* <NavLink to={`${url}/artist/marketing-page`} className="mini-admin">
 						Mini-admin
 
-						</NavLink>
+						</NavLink> */}
 						<div
 							className="signout-btn heading-6-1 font-weight--5"
 							onClick={() => {
@@ -124,7 +129,7 @@ class DashBoardIndex extends Component {
 					 <div>
 				
 						<Switch>
-					<Route exact path="/"  component={AllUser}/>
+					<Route exact path="/"  component={Dashboard}/>
 					<Route  path="/_pendingTrack"  component={Pending}/>
 					
 					<Route  path="/artiste"  component={Artist}/>
@@ -134,6 +139,7 @@ class DashBoardIndex extends Component {
 						<Route  path="/admin_uploaded_tracks"  component={Upload} />
 						<Route   path="/catalogue"  component={Catalogue} />
 						<Route   path="/users"  component={UserActivity} />
+						<Route   path="/allUser"  component={AllUser} />
 					</Switch>
 	             
 					</div> 

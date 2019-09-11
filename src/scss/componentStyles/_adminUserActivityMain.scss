@@ -1,8 +1,8 @@
 @import '../abstracts/mixins';
-.artistDetails{
+.artistDetail{
 margin:0 auto;
-// margin-top:-30rem;
-margin-left:2.5rem;
+margin-top:0rem;
+// margin-left:2.5rem;
 display:grid;
 width:95%;
 grid-template-columns:1fr 5fr 1fr;
@@ -46,10 +46,15 @@ padding-left:0.5rem;
   }
 
 }
-.artistInfo h1{
-font-size:4rem;
+.artistInf h1{
+font-size:3.6rem;
+font-family: var(--font-display-2);
+font-size: 36px;
+font-weight: 300;
+line-height: 36px;
+
 }
-.artistInfo h5{
+.artistInf h5{
   font-size:1.8rem;
   font-weight:500;
   font-style:italic;
@@ -62,7 +67,7 @@ font-size:4rem;
     overflow:visible;
   }
 }
-.infoTable {
+.infoTabl {
   font-family:var(--default-font);
 	width:95%;
 	border: 1px solid rgba(212,222,226,0.31);
@@ -78,7 +83,13 @@ font-size:4rem;
     margin:0 auto;
     width:90%;
   }
-  
+.detailsTit{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+   letter-spacing: 1.71px;	
+  line-height: 15px;
+}
 }
 
 .tableTitle{
@@ -89,10 +100,10 @@ font-size:4rem;
   font-size:1.8rem;
   border-bottom:1px solid #D4DEE2;
 }
-.infoTable td{
+.infoTabl td{
   table-layout: fixed;
   text-align:left;
-  padding:2rem 3rem;
+  padding:1rem 3rem;
   font-size:1.4rem;
   border-bottom:1px solid #D4DEE2;
     border-collapse: collapse;

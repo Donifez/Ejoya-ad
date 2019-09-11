@@ -38,7 +38,7 @@ div.music_monitor_wrapper{
     
    
     .All_users{
-        height: 34px;	color: #000000;	font-family: var(--font-display-3);	font-size: 36px;	font-weight: 300;	line-height: 36px;  left:1rem;
+        height: 34px;	color: #000000;	font-family: var(--font-display-2);	font-size: 36px;	font-weight: 300;	line-height: 36px;  left:1rem;
         position:relative;
      
       @include respond(android-phone){
@@ -60,7 +60,7 @@ div.music_monitor_wrapper{
        position:relative;
 
        text-align:center;
-        right:-22rem;
+        right:-25rem;
         
         @include respond(tab-land){
             right:-6rem;
