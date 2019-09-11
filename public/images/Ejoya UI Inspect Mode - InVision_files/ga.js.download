@@ -1,0 +1,102 @@
+(function() {
+  var Clearbit, providePlugin,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  providePlugin = function(pluginName, pluginConstructor) {
+    var tryApply = function() {
+      var ga = window[window['GoogleAnalyticsObject'] || 'ga'];
+
+      if (typeof ga === 'function') {
+        ga('provide', pluginName, pluginConstructor);
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    if (tryApply()) {
+      // Native support
+    } else if (window.analytics && typeof window.analytics.ready === 'function') {
+      // Segment support
+      analytics.ready(tryApply);
+    } else {
+      console.error("Clearbit error: 'ga' variable not found.");
+    }
+  };
+
+  Clearbit = (function() {
+      function Clearbit(tracker, config) {
+        this.tracker = tracker;
+        this.config = config != null ? config : {};
+        this.triggerEvent = bind(this.triggerEvent, this);
+        this.setIPDimensions = bind(this.setIPDimensions, this);
+        this.setDimensions = bind(this.setDimensions, this);
+        this.set = bind(this.set, this);
+        this.done = bind(this.done, this);
+        this.mapping = this.config.mapping || {};
+        this.done({"ip":"154.113.89.202","domain":"studio14online.co.uk","type":"company","fuzzy":true,"company":{"id":"3bcf758a-d195-4289-a5b5-ca64d70f9f52","name":"Studio 14","legalName":null,"domain":"studio14online.co.uk","domainAliases":[],"site":{"phoneNumbers":["+44 121 439 3031"],"emailAddresses":["daniel@studio14online.co.uk","careers@studio14online.co.uk","internships@studio14online.co.uk"]},"category":{"sector":"Industrials","industryGroup":"Commercial \u0026 Professional Services","industry":"Professional Services","subIndustry":"Consulting","sicCode":"73","naicsCode":"54"},"tags":["Consulting \u0026 Professional Services","Design","Mobile","B2B"],"description":"A Digital product studio with a passion for solving problems. We are experienced designers, developers \u0026 animators ready to help make your idea a reality","foundedYear":2011,"location":"202b, The Big Peg, 120 Vyse St, Birmingham B18 6NF, UK","timeZone":"Europe/London","utcOffset":1,"geo":{"streetNumber":"120","streetName":"Vyse Street","subPremise":"202b","city":"Birmingham","postalCode":"B18 6NF","state":"West Midlands","stateCode":null,"country":"United Kingdom","countryCode":"GB","lat":52.48758970000001,"lng":-1.9117968},"logo":"https://logo.clearbit.com/studio14online.co.uk","facebook":{"handle":"studio14online","likes":160},"linkedin":{"handle":"company/studio-14"},"twitter":{"handle":"Studio14Online","id":"324560738","bio":"A digital agency with a purpose! We build products that solve problems. Based in Birmingham, UK \u0026 Lagos, Nigeria. Our brands: @4dspacelagos @xtechhut","followers":388,"following":817,"location":"Birmingham, England \u0026 Lagos Nigeria","site":"http://t.co/BKIeHuk1tj","avatar":"https://pbs.twimg.com/profile_images/492046655814782977/m-Z0yH_Q_normal.png"},"crunchbase":{"handle":"organization/gistmee"},"emailProvider":false,"type":"private","ticker":null,"identifiers":{"usEIN":null},"phone":null,"metrics":{"alexaUsRank":null,"alexaGlobalRank":10783811,"employees":30,"employeesRange":"11-50","marketCap":null,"raised":null,"annualRevenue":null,"estimatedAnnualRevenue":"$1M-$10M","fiscalYearEnd":null},"indexedAt":"2019-08-16T17:30:17.163Z","tech":["wordpress","google_analytics","unix","apache","google_maps","drift"],"parent":{"domain":null},"ultimate_parent":{"domain":null}},"geoIP":{"city":"Lagos","state":"Lagos","stateCode":"LA","country":"Nigeria","countryCode":"NG"}});
+      }
+      Clearbit.prototype.done = function(response) {
+          if (response) {
+             this.setIPDimensions(response);
+             if (response.company){
+                 this.setDimensions(response.company);
+            }
+            return this.triggerEvent();
+         }
+       };
+        Clearbit.prototype.set = function(key, value) {
+         if (key && value) {
+           return this.tracker.set(key, value);
+         }
+       };
+        Clearbit.prototype.setIPDimensions = function(response) {
+         if (typeof response.type !== 'undefined') {
+           this.set(this.mapping.type, response.type)
+         }
+       }
+
+    Clearbit.prototype.setDimensions = function(company) {
+      var ref, ref1;
+      this.set(this.mapping.companyName, company.name);
+      this.set(this.mapping.companyDomain, company.domain);
+      this.set(this.mapping.companyType, company.type);
+      this.set(this.mapping.companyTags, (ref = company.tags) != null ? ref.join(',') : void 0);
+      this.set(this.mapping.companyTech, (ref1 = company.tech) != null ? ref1.join(',') : void 0);
+      this.set(this.mapping.companySector, company.category.sector);
+      this.set(this.mapping.companyIndustryGroup, company.category.industryGroup);
+      this.set(this.mapping.companyIndustry, company.category.industry);
+      this.set(this.mapping.companySubIndustry, company.category.subIndustry);
+      this.set(this.mapping.companySicCode, company.category.sicCode);
+      this.set(this.mapping.companyNaicsCode, company.category.naicsCode);
+      this.set(this.mapping.companyCountry, company.geo.countryCode);
+      this.set(this.mapping.companyState, company.geo.stateCode);
+      this.set(this.mapping.companyCity, company.geo.city);
+      this.set(this.mapping.companyFunding, company.metrics.raised);
+      this.set(this.mapping.companyEstimatedAnnualRevenue, company.metrics.estimatedAnnualRevenue);
+      this.set(this.mapping.companyEmployeesRange, company.metrics.employeesRange);
+      this.set(this.mapping.companyEmployees, company.metrics.employees);
+      return this.set(this.mapping.companyAlexaRank, company.metrics.alexaGlobalRank);
+    };
+
+    Clearbit.prototype.triggerEvent = function() {
+      return this.tracker.send(
+        'event',
+        'Clearbit',
+        'Enriched',
+        'Clearbit Enriched',
+        {nonInteraction: true}
+      );
+    };
+
+    return Clearbit;
+
+  })();
+
+  providePlugin('Clearbit', Clearbit);
+
+  
+
+  
+
+}).call(this);

@@ -1,0 +1,73 @@
+@import '../abstracts/mixins';
+
+div.details1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100rem;
+    height:4rem;
+    margin-top:-2rem;
+    box-sizing: border-box; 	border-top: 1px solid #D4DEE2;
+    height:7rem ;
+    @include respond (tab-land){
+        width:750px;
+    }
+    @include respond(android-phone){
+        width:355px;
+    }
+    @include respond (small-android){
+        width:320px;
+    }
+    .art_img{
+        height: 39px;	width: 39px;	border-radius: 8px;
+        position:relative; top:-1.5rem; left:-4rem;
+        @include respond(tab-land){
+            left:-9rem;
+        }
+        @include respond(android-phone){
+            left:-5.8rem;
+            height:36px;
+            width:36px;
+        }
+        @include respond (small-android){
+            width:35px;
+            height:35px;
+         }
+    }
+    #art{
+        position:relative;
+        top:1rem;
+        // right:-13rem;
+    }
+    .details,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+            height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+            @include respond(tab-land){
+                width:30px;
+                left:10rem;
+                font-size:13px;
+              
+            }
+            @include respond(android-phone){
+                left:5.9rem;
+                font-size:8px;
+                width:30px;
+             }
+        strong{
+            position: relative;
+            top:-2.5rem;
+            right:3rem;
+            @include respond(tab-land){
+                top:-4.5rem;
+                right:2rem;
+               
+                }
+        }
+        span{
+            position:relative;
+            right:2.8rem;
+            @include respond(tab-land){
+                right:1rem;
+            }
+        }
+   }
+  
+}

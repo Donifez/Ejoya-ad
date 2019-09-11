@@ -1,0 +1,210 @@
+div.music_monitor_wrapper{
+    font-family:var(--default-font);
+    display:flex;
+   width: 100rem;
+   height: 90.0rem;
+   background: var(--color-white);
+   div.top_page{
+    width:103rem;
+    height:30rem;
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    top:7rem;
+    left:12rem;
+   
+    .All_users{
+        height: 34px;	width: 281px;	color: #000000;	font-family: Octarine;	font-size: 36px;	font-weight: 300;	line-height: 36px;
+
+     
+     
+    }
+    .search{
+       height: 4.8rem;
+       width: 20.6rem;
+       border: 1px solid #D4DEE2;	
+       border-radius: 4px;
+       text-align:center;
+}
+
+}
+div.allusers_table{
+    height: 450px;	width: 103rem;	border: 1px solid rgba(212,222,226,0.31);	border-radius: 4px;	background-color: #FFFFFF;	box-shadow: 0 11px 27px 0 rgba(116,119,120,0.09);  position:relative; top:20rem; left:12rem;
+    display:grid;
+  
+    div.header{
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       width: 103rem;
+       height:4rem;
+       box-sizing: border-box; 	border: 1px solid #D4DEE2;
+       height:7rem;
+      .users_header,.reg_date_header,.tracks_header, .rpu-header, .region_header, .ups_header{
+        height: 15px;	width: 150px;	color: rgba(0,0,0,0.61);	font-family: Montserrat;	font-size: 12px;	font-weight: 500;	letter-spacing: 1.71px;	line-height: 15px; position:relative;
+        top:3rem; left:13rem; 
+
+       
+      }
+      
+      
+    }
+    div.details{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 103rem;
+        height:4rem;
+        margin-top:-2rem;
+        box-sizing: border-box; 	border: 1px solid #D4DEE2;
+        height:7rem ;
+        .art_img{
+            height: 39px;	width: 39px;	border-radius: 8px;
+            position:relative; top:-1.5rem; left:-4rem;
+        }
+        #art{
+            position:relative;
+            top:1rem;
+            // right:-13rem;
+        }
+        .details,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+            	height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+            strong{
+                position: relative;
+                top:-2.5rem;
+                right:3rem;
+            }
+            span{
+                position:relative;
+                right:2.8rem;
+            }
+       }
+      
+}
+
+// div.details2{
+//     display:grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//     width: 103rem;
+//     height:4rem;
+//     margin-top:-15rem;
+//     box-sizing: border-box; 	border: 1px solid #D4DEE2;
+//     height:7rem ;
+//     .art_img{
+//         height: 39px;	width: 39px;	border-radius: 8px;
+//         position:relative; top:-1.5rem; left:-4rem;
+//     }
+//     #art{
+//         position:relative;
+//         top:1rem;
+//         // right:-13rem;
+//     }
+//     .details1,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+//             height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+//         strong{
+//             position: relative;
+//             top:-2.5rem;
+//             right:3rem;
+//         }
+//         span{
+//             position:relative;
+//             right:2.2rem;
+//         }
+//    }
+// }
+
+div.details2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 103rem;
+    height:4rem;
+    margin-top:-2rem;
+    box-sizing: border-box; 	border: 1px solid #D4DEE2;
+    height:7rem ;
+    .art_img{
+        height: 39px;	width: 39px;	border-radius: 8px;
+        position:relative; top:-1.5rem; left:-4rem;
+    }
+    #art{
+        position:relative;
+        top:1rem;
+        // right:-13rem;
+    }
+    .details2,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+            height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+        strong{
+            position: relative;
+            top:-2.5rem;
+            right:3rem;
+        }
+        span{
+            position:relative;
+            right:2.2rem;
+        }
+   }
+}
+
+div.details3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 103rem;
+    height:4rem;
+    margin-top:-2rem;
+    box-sizing: border-box; 	border: 1px solid #D4DEE2;
+    height:7rem ;
+    .art_img{
+        height: 39px;	width: 39px;	border-radius: 8px;
+        position:relative; top:-1.5rem; left:-4rem;
+    }
+    #art{
+        position:relative;
+        top:1rem;
+       
+    }
+    .details1,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+            height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+        strong{
+            position: relative;
+            top:-2.5rem;
+            right:3rem;
+        }
+        span{
+            position:relative;
+            right:2.2rem;
+        }
+   }
+}
+div.details4{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 103rem;
+    height:1rem;
+    margin-top:-2rem;
+    box-sizing: border-box; 	border: 1px solid #D4DEE2;
+    height:7rem ;
+    .art_img{
+        height: 39px;	width: 39px;	border-radius: 8px;
+        position:relative; top:-1.5rem; left:-4rem;
+    }
+    #art{
+        position:relative;
+        top:1rem;
+       
+    }
+    .details1,.artist,.date, .no_of_tracks, .rpu, .region, .image{
+            height: 16px;	width: 160px;	color: #000000;	font-family: Montserrat;	font-size: 13px;	line-height: 16px; position:relative; left:12rem; top:3rem;
+        strong{
+            position: relative;
+            top:-2.5rem;
+            right:3rem;
+        }
+        span{
+            position:relative;
+            right:2.2rem;
+        }
+   }
+}
+   
+
+   
+
+}
+}

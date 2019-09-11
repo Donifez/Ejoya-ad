@@ -1,0 +1,44 @@
+div.dsp_wrapper{
+    display:grid;
+    grid-template-columns: 3fr;
+    border: 1px solid black;
+    width:70rem;
+    height:40rem;
+    .choose{
+        margin-top:6rem;
+     
+   label{
+       font-size:2rem;
+       font-weight:bolder;
+      
+       margin-right:2rem;
+   }
+   select{
+       width:10rem;
+       border:1px solid black;
+   }
+}
+.upload{
+    margin-top:-3rem;
+    label{
+        font-size:2rem;
+        font-weight:bolder;
+              
+       margin-right:2rem;
+    }
+    input{
+        width:30rem;
+        border:1px solid black;
+    }
+}
+.submit_button{
+    width:18rem;
+    height:4rem;
+    background:black;
+    color:white;
+    font-size:2rem;
+    border-radius: 6px;
+    border:none;
+    margin-left:4rem;
+}
+}

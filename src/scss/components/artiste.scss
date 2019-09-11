@@ -1,0 +1,211 @@
+@import "../abstracts/mixins";
+// Import your mixins here
+.container-wrapper{
+  width: 100%;
+  margin:0 auto;
+  // position: absolute;
+  right:0;
+  top:5rem;
+  // Adjust the Width, romove the positioning
+
+   @include respond(tab-land) {
+    width:90%;
+    margin:2rem auto;
+	      }
+  
+.activity-wrapper{
+   width:100%;
+   overflow: hidden;
+}
+.user-activity-container{
+ 
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap:2rem;
+  width:150%;
+  overflow:none;
+  
+  
+  .user-activity-box {
+    height: 20rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid rgba(212,222,226,0.31);
+    border-radius: 0.8rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);;
+    .apple-circle{
+      height:5rem;
+      width:5rem;
+      background:black;
+      border-radius:50%;
+    }
+    h2{
+      font-size:4.8rem
+    }
+    p{
+      font-size:2.4rem;
+    }
+    small{
+      font-size:1.2rem;
+    }
+    .artiste-avatar{
+      font-size:9rem;
+      margin-bottom:2rem;
+    }
+    .caret{
+      font-size:1.4rem;
+      cursor:pointer;
+    }
+    
+  }
+  
+}
+
+.activity-section-container{
+    margin-top:6rem;
+   
+    .user-activity-wrapper{
+      display:grid;
+      grid-template-columns:3fr 1fr;
+      padding-top:1rem;
+      @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    
+	      }
+      
+      h2{
+        font-weight:300;
+        font-size:3.5rem;
+        @include respond(tab-land) {
+    text-align:center;
+    
+	      }
+      }
+        .activity-button{
+          background-color: #F2F5F6;
+        color:black;
+        border:none;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);;
+        font-size:1.6rem;
+        border-radius:4px;
+        margin-right:2rem;
+        cursor:pointer;
+        @include respond(tab-land) {
+          padding:2rem 0;
+          margin-top:3rem
+              }
+      }
+      
+    }
+    .activity-table{
+          width:98%;
+          margin-top:3rem;
+          @include respond(small-android){
+            width:100%;
+            font-size:1rem;
+          }
+          table{
+            border: 1px solid rgba(212,222,226,0.31);
+            border-radius: 4px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            width:100%;
+              border-collapse: collapse;
+
+            th{
+              font-size:1rem;
+              color:rgba(0,0,0,0.61);
+              text-transform:uppercase;
+              text-align:left;
+              padding:1.5rem 3rem;
+              border-bottom:1px solid rgba(212,222,226,0.31);
+                @include respond(small-android) {
+                padding:0.5rem 0.4rem;;
+                font-size:1rem;
+      
+                }
+            }
+            td{
+              font-size:1.3rem;
+              text-align:left;
+              padding:1.5rem 3rem;
+              border-bottom:1px solid rgba(212,222,226,0.31);
+              @include respond(small-android) {
+                padding:0.5rem 0.4rem;;
+                font-size:1rem;
+      
+                 }
+              .cps-circle{
+                width:3rem;
+                height:3rem;
+                
+                border-radius:50%;
+                background-color: #D8D8D8;
+              }
+            }
+            
+          }
+          
+         
+      }
+  }
+  .user-artiste-info-wrapper{
+    margin-bottom:4rem;
+        display:grid;
+    grid-template-columns: 3fr 1fr;
+     @include respond(tab-land) {
+		grid-template-columns: 1fr;
+	      }
+    .artise-button{
+        background:black;
+        color:white;
+        border:none;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);;
+        font-size:1.6rem;
+        border-radius:4px;
+        margin-right:2rem;
+        cursor:pointer;
+         @include respond(tab-land) {
+           margin-top:2rem;
+          padding:1rem 0;
+	      }
+        
+      }
+    .user-artiste-info-container{
+      display:grid;
+      grid-template-columns: 1fr 8fr;
+      @include respond(tab-land) {
+        grid-template-columns: 1fr;
+        text-align:center;
+            }
+      
+      .user-artiste-info-image{
+        width:6rem;
+        height:6rem;
+         @include respond(tab-land) {
+          margin:0 auto;
+	      }
+        .info-image{
+          height: 100%;	
+          width: 100%;	
+          border-radius: 8px;
+        }
+      }
+      .user-artiste-info-details{
+        h2{
+            font-weight:300;
+            font-size:3.6rem;
+        }
+        p{
+          color:#4A4A4A;
+          font-weight: 500;
+          font-size:1.5rem;
+          font-style:italic;
+        }
+      }
+    }
+  }
+  
+}

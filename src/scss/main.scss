@@ -1,0 +1,27 @@
+//abstracts import
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//base imports
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+//shared components between components
+@import 'sharedcomponents/burger';
+
+div.image-center {
+	height: 40rem;
+	width: 80rem;
+	margin: 0 auto;
+	& > img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+}
+//components
+@import 'components/dashboard';

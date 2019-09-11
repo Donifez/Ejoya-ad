@@ -1,0 +1,79 @@
+div.upload-wrapper{
+   
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    background:#ffffff;
+    border:2px thick black;
+  
+    .Selectusers{
+        h1{
+          margin-left:30rem;
+            font-size:5rem;
+        }
+     
+        .form1{
+            display:grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            margin-left:7rem;
+            margin-top:3rem;
+            input{
+                height:4rem;
+                width:40rem;
+            }
+                .submit{
+                  margin-top:2rem;
+                  background:rgb(169, 212, 172);
+                 font-weight:bolder;
+                  color:white;
+                }
+           
+        }
+        label{
+            font-size:2rem;
+            margin:1rem;
+        }
+        select{
+            width:17rem;
+            height:4rem;
+        }
+    width:70rem;
+    height:70rem;
+   
+        .checkbox{
+            width:0.2rem;
+        }
+    }
+
+    .Selectusers2{
+        margin-top:5rem;
+        margin-right:10rem;
+        .form2{
+            display:grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            margin-top:3rem ;
+            input{
+                height:1rem;
+            }
+            label{
+                font-size:1.5rem;
+                margin:1rem;
+               
+            }
+
+        }
+    }
+    button{
+        width:30rem;
+        background:rgb(28, 31, 28);
+        height:4rem;
+        border:none;
+        border-radius:20px;
+        margin:1rem;
+        margin-left:33rem;
+        color:white;
+        font-size:3rem;
+    }
+}

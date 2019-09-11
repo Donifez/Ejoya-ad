@@ -1,0 +1,51 @@
+div.details1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 103rem;
+  height: 4rem;
+  margin-top: -2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #D4DEE2;
+  height: 7rem;
+}
+
+div.details1 .art_img {
+  height: 39px;
+  width: 39px;
+  border-radius: 8px;
+  position: relative;
+  top: -1.5rem;
+  left: -4rem;
+}
+
+div.details1 #art {
+  position: relative;
+  top: 1rem;
+}
+
+div.details1 .details, div.details1 .artist, div.details1 .date, div.details1 .no_of_tracks, div.details1 .rpu, div.details1 .region, div.details1 .image {
+  height: 16px;
+  width: 160px;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  left: 12rem;
+  top: 3rem;
+}
+
+div.details1 .details strong, div.details1 .artist strong, div.details1 .date strong, div.details1 .no_of_tracks strong, div.details1 .rpu strong, div.details1 .region strong, div.details1 .image strong {
+  position: relative;
+  top: -2.5rem;
+  right: 3rem;
+}
+
+div.details1 .details span, div.details1 .artist span, div.details1 .date span, div.details1 .no_of_tracks span, div.details1 .rpu span, div.details1 .region span, div.details1 .image span {
+  position: relative;
+  right: 2.8rem;
+}
+/*# sourceMappingURL=Alluser.css.map */
