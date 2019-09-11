@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink,Route, Switch,BrowserRouter as Router } from 'react-router-dom';
 import { FiArrowRightCircle, FiTarget } from 'react-icons/fi';
+import History from "../../components/mainContent/_transactionHistory";
+import Upload from "../../components/mainContent/_adminUploadedTrack.js";
+import Activity from "../../components/mainContent/_adminUserActivity.js";
+import Royalties from "../../components/mainContent/_paidRoyalties";
 import Pending from "../../components/mainContent/_pendingTrack";
-import Notification from "../../notification"; 
-import Wallet from "../../wallet";
+import Catalogue from "./catalogue/index";
+import UserActivity from "./users/index";
 import Artist from "../../artiste";
 import AllUser from ".././../allUser";
 // import Miniadmin from  "../MiniAdmin/index"; 
@@ -52,14 +56,34 @@ class DashBoardIndex extends Component {
 							<span className="home" />
 							pending
 						</NavLink>
-						<NavLink to="/notification"className="heading-6-1 font-weight--5">
-							<span className="fans" />
-							Notification
+					
+						<NavLink to="/admin_transaction_history" className="heading-6-1 font-weight--5">
+							<span className="wallet" />
+							Transaction history
 						</NavLink>
-						<NavLink to="/wallet" className="heading-6-1 font-weight--5">
-							<span className="team" />
-							wallet
+						<NavLink to="/admin_users_activity" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Users Activity
 						</NavLink>
+						<NavLink to="/admin_paid_royalties" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Paid Royalties
+						</NavLink>
+
+						<NavLink to="/admin_uploaded_tracks" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Uploaded tracks
+						</NavLink>
+						<NavLink to="/catalogue" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Catalogue
+						</NavLink>
+						<NavLink to="/users" className="heading-6-1 font-weight--5">
+							<span className="setting" />
+							Users
+						</NavLink>
+
+
 						<NavLink to="/artiste" className="heading-6-1 font-weight--5">
 							<span className="wallet" />
 							Artist
@@ -102,9 +126,14 @@ class DashBoardIndex extends Component {
 						<Switch>
 					<Route exact path="/"  component={AllUser}/>
 					<Route  path="/_pendingTrack"  component={Pending}/>
-					<Route path="/notification"  component={Notification}/>
-					<Route  path="/wallet"  component={Wallet}/>
+					
 					<Route  path="/artiste"  component={Artist}/>
+					<Route  path="/admin_transaction_history"  component={History}/>
+					<Route  path="/admin_users_activity"  component={Activity} />
+						<Route  path="/admin_paid_royalties"  component={Royalties} />
+						<Route  path="/admin_uploaded_tracks"  component={Upload} />
+						<Route   path="/catalogue"  component={Catalogue} />
+						<Route   path="/users"  component={UserActivity} />
 					</Switch>
 	             
 					</div> 
