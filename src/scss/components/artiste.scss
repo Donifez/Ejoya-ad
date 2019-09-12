@@ -103,14 +103,7 @@
     .activity-table{
           width:98%;
           margin-top:3rem;
-          @include respond(android){
-            width:100%;
-            font-size:1rem;
-          }
-          @include respond(small-android){
-            width:100%;
-            font-size:1rem;
-          }
+         
           table{
             border: 1px solid rgba(212,222,226,0.31);
             border-radius: 4px;
@@ -123,10 +116,10 @@
               color:rgba(0,0,0,0.61);
               text-transform:uppercase;
               text-align:left;
-              padding:1.5rem 3rem;
+              padding:1.5rem 1.2rem;
               border-bottom:1px solid rgba(212,222,226,0.31);
               @include respond(android) {
-                // padding:0.5rem ;
+                padding:0.1rem ;
                 font-size:1rem;
       
                 }
@@ -139,12 +132,12 @@
             td{
               font-size:1.3rem;
               text-align:left;
-              padding:1.5rem 3rem;
+              padding:1rem 0.3rem;
               border-bottom:1px solid rgba(212,222,226,0.31);
-              @include respond(android) {
-                // padding:0.5rem 0.4rem;
+              @include respond(android){
+                
+                padding:0.1rem 0.1rem;
                 font-size:1rem;
-      
                  }
               @include respond(small-android) {
                 padding:0.5rem 0.4rem;
@@ -154,9 +147,11 @@
               .cps-circle{
                 width:3rem;
                 height:3rem;
-                
                 border-radius:50%;
                 background-color: #D8D8D8;
+                @include respond(android){
+                  padding:0.1rem 0.1rem;
+                   }
               }
             }
             

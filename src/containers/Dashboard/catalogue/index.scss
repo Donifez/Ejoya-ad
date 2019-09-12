@@ -26,14 +26,26 @@
       }
     }
     
-      .dashHeading{
+      .dash_Heading{
         display:grid;
-        grid-template-columns:2fr 1fr;
+        grid-template-columns:2fr 0.5fr;
+        h2{
+          height: 34px;
+          width: 300px;	
+          color: #000000;
+          font-family: var(--font-display-2);
+          font-size: 36px;
+          font-weight: 300;
+          line-height: 36px;
+        }
+       
          
-        button.adminButton {
-          padding:1.7rem 4rem;
+        button.admin_Button {
+          height: 48px;
+            width: 208px;
+         
           // float:right;
-          font-size:1.6rem;
+          font-size:1.3rem;
           font-weight:600;
           cursor:pointer;
           font-family:var(--default-font);
@@ -43,13 +55,13 @@
           color:#ffff;
         }
       }
-      .dashboard-card-wrapper{
+      .dashboard-card-wrap{
         margin-top:2rem;
         width:150%;
         display:grid;
         overflow-x: scroll;
         grid-template-columns: repeat( auto-fill, minmax(23rem, 1fr) );
-        .dashboard-card{
+        .dashboardcard{
             height: 18rem;
             width: 27rem;
            margin-top:2rem;
@@ -57,17 +69,18 @@
             border: 0.1rem solid rgba(212,222,226,0.31);
             border-radius: 0.4rem;
             background-color: #FFFFFF;
-            box-shadow: 0 11px 27px 0 rgba(116,119,120,0.09);
+            box-shadow: 0 0px 27px 0px rgba(116,119,120,0.09);
             
-            button.viewUserBtn{
+            button.viewBtn{
+              font-family:var(--default-font);
               height: auto; 
               padding:1.2rem;
               width: 99%;
               position:absolute;
               bottom:0;
-              font-weight:normal !important;
+
               cursor:pointer;
-              font-size:1.8rem;
+              font-size:1.4rem;
               border-radius: 0.4rem;
               border: 1px solid #D4DEE2;
               color:#000;

@@ -16,29 +16,29 @@ class Catalogue extends Component {
           <button className="goRight">
             <FaArrowRight />/
           </button>
-    <div className="dashHeading">
+    <div className="dash_Heading">
       <h2>Music Catalogue</h2>
-      <button className="adminButton">
+      <button className="admin_Button">
         View Pending Releases
       </button>
     </div>
-    <div className="dashboard-card-wrapper">
-    <div className="dashboard-card">
+    <div className="dashboard-card-wrap">
+    <div className="dashboardcard">
       <h3>5,000</h3>
       <h4>Tracks Uploaded</h4>
-      <button className="viewUserBtn">View Transaction History</button>
+      <button className="viewBtn">View Transaction History</button>
     </div>
-    <div className="dashboard-card">
+    <div className="dashboardcard">
       <h3>450</h3>
       <h4>Albums</h4>
-      <button className="viewUserBtn">View Earning Users</button>
+      <button className="viewBtn">View Earning Users</button>
     </div>
-    <div className="dashboard-card">
+    <div className="dashboardcard">
       <h3>32,000</h3>
       <h4>Total Streams</h4>
-      <button className="viewUserBtn">View Royalties</button>
+      <button className="viewBtn">View Royalties</button>
     </div>
-    <div className="dashboard-card">
+    <div className="dashboardcard">
       <h3>15%</h3>
       <h4>Weekly Upload</h4>
       

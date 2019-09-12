@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./scss/components/artiste.scss";
 import { FaCaretDown, FaUser } from "react-icons/fa";
+import Carousel from "./carousel";
 
 class Artiste extends Component {
   render() {
@@ -25,7 +26,7 @@ class Artiste extends Component {
           </div>
           <div className="activity-wrapper">
           <div className="user-activity-container">
-            <div className="user-activity-box">
+             <div className="user-activity-box">
               <h2>44K</h2>
               <p>Streams</p>
               <small>
@@ -52,15 +53,16 @@ class Artiste extends Component {
             <div className="user-activity-box">
               <div className="artist-img">
               <FaUser className="artiste-avatar" />
-                {/* <img src="inspect/avatar2.png" alt="Artist Name"  /> */}
+                 {/* <img src="inspect/avatar2.png" alt="Artist Name"  />  */}
               </div>
               <small>
                 Most Streamed <FaCaretDown className="caret" />
               </small>
-            </div>
+            </div> 
+            <Carousel/>
           </div>
           <div className="activity-section-container">
-
+          
             <div className="user-activity-wrapper">
                 <h2> User Activity </h2>
                 <button className="activity-button">View Artist’s Activity</button>   
@@ -98,6 +100,7 @@ class Artiste extends Component {
             </table>
             </div>
           </div>
+         
         </div>
         </div>
       

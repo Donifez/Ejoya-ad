@@ -28,20 +28,34 @@ h2{
   
     .dashHeading{
       display:grid;
-      grid-template-columns:2fr 1fr;
-       
+      grid-template-columns:2fr 4fr;
+  
+       h1{
+        height: 34px;
+        width: 306px;
+        color: #000000;
+        font-family: var(--font-display-2);
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 36px;
+       }
       button.adminButton {
-        padding:1.7rem 4.5rem;
+        // padding:1.3rem 2rem;
         // float:right;
-        font-size:1.6rem;
-        font-weight:600;
+       
+       font-size: 5px;
+        font-weight: 300;
+        line-height: 16px;
+        width:123px;
         cursor:pointer;
         font-family:var(--default-font);
         border: 0.1rem solid #D4DEE2;
         border-radius: 0.4rem;
         background-color: #000000;
         color:#ffff;
+        height:48px;
        width:250px;
+
       }
     }
     .dashboard-card-wrapper{
@@ -55,24 +69,24 @@ h2{
           width: 27rem;
          margin-top:2rem;
           position:relative;
-          border: 0.1rem solid rgba(212,222,226,0.31);
+          border: 0.1rem thin rgba(212,222,226,0.31);
           border-radius: 0.4rem;
           background-color: #FFFFFF;
           box-shadow: 0 11px 27px 0 rgba(116,119,120,0.09);
           
           button.viewUserBtn{
-            height: auto;
-            padding:1.2rem;
-            width: 99%;
-            position:absolute;
-            bottom:0;
-            font-weight:bold;
-            cursor:pointer;
-            font-size:1.8rem;
-            border-radius: 0.4rem;
-            border:none;
-            color:#ffff;
-            background: linear-gradient(270deg, #E5396B 0%, #C85B80 100%);
+            // height: auto;
+            // padding:1.2rem;
+            // width: 99%;
+            // position:absolute;
+            // bottom:0;
+            // font-weight:bold;
+            // cursor:pointer;
+            // font-size:1.4rem;
+            // border-radius: 0.4rem;
+            // border:none;
+            // color:#ffff;
+            // background: linear-gradient(270deg, #E5396B 0%, #C85B80 100%);
           }
           h3{
             text-align:center;

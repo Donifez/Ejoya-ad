@@ -27,13 +27,13 @@ class AllUser extends Component {
           <div >
   <table>
     <tr>
-      <th></th>
-      <th>USERS</th>
-      <th>REG DATE</th>
-      <th>TRACKS</th>
-      <th>RPU</th>
-      <th>REGION</th>
-      <th>CPs</th>
+      <th className="head"></th>
+      <th className="head">USERS</th>
+      <th className="head">REG DATE</th>
+      <th className="head">TRACKS</th>
+      <th className="head">RPU</th>
+      <th className="head">REGION</th>
+      <th className="head">CPs</th>
     
     </tr>
     <tr>

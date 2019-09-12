@@ -98,7 +98,8 @@ font-family: var(--font-display-2);
   color:var(	--grey-color-1);
   padding:1rem 3rem;
   font-weight:500;
-  font-size:1.8rem;
+  font-family:var(--default-font);
+  font-size:12px;
   border-bottom:1px solid #D4DEE2;
   @include respond(tab-land){
     top:-6rem;
