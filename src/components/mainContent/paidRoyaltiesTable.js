@@ -18,7 +18,7 @@ class Table extends React.Component {
    renderTableHeader() {
       let header = Object.keys(this.state.details[0])
       return header.map((key, index) => {
-         return <th className="tableTitle" key={index}>{key.toUpperCase()}</th>
+         return <th className="tableTit_le" key={index}>{key.toUpperCase()}</th>
       })
    }
 
@@ -40,7 +40,7 @@ class Table extends React.Component {
    render() {
       return (
          <div>
-            <table className='infoTable'>
+            <table className='infoTab_le'>
                <tbody>
                   <tr className="detailsTitle">{this.renderTableHeader()}</tr>
                   {this.renderTableData()}

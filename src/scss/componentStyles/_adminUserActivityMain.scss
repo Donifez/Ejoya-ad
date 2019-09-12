@@ -67,7 +67,7 @@ line-height: 36px;
     overflow:visible;
   }
 }
-.infoTabl {
+.infoTable_ {
   font-family:var(--default-font);
 	width:95%;
 	border: 1px solid rgba(212,222,226,0.31);
@@ -92,22 +92,37 @@ line-height: 36px;
 }
 }
 
-.tableTitle{
+.tableTitle_{
   text-align:left;
   color:var(	--grey-color-1);
   padding:2rem 3rem;
   font-weight:500;
   font-size:1.8rem;
   border-bottom:1px solid #D4DEE2;
+  @include respond(android-phone) {
+    padding:0.4rem;
+   }
+   @include respond(small-android) {
+    padding:0.2rem;
+    font-size:1.3rem;
+   }
 }
-.infoTabl td{
+.infoTable_ td{
   table-layout: fixed;
   text-align:left;
   padding:1rem 3rem;
   font-size:1.4rem;
   border-bottom:1px solid #D4DEE2;
     border-collapse: collapse;
-
+    @include respond(tab-port) {
+     padding:3rem;
+    }
+    @include respond(android-phone) {
+      padding:0.4rem;
+     }
+     @include respond(small-android) {
+      padding:0.2rem;
+     }
 }
 .artistBold{
   font-weight:bold;

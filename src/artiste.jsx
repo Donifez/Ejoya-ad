@@ -68,7 +68,7 @@ class Artiste extends Component {
             <div className="activity-table" >
             <table>
              <tr> 
-               <th>Description</th> <th>Date & Time</th>  <th>Region</th> <th>CPS</th> 
+               <th className="header">Description</th> <th className="header">Date & Time</th>  <th className="header">Region</th> <th className="header">CPS</th> 
                </tr>
              <tr>
                <td> 
