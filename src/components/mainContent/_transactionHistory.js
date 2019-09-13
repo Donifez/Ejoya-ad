@@ -7,6 +7,14 @@ import "../../scss/abstracts/_variables.scss";
 
 export default () => (
 	<>
+
+
+
+
+
+
+
+  
 		<div className="mainContent">
 				<div className="artistDetails">
           <div className="artistInfo">

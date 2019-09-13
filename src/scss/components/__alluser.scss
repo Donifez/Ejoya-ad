@@ -61,18 +61,8 @@ div{
         border: 1px solid #ddd;
         border-collapse: collapse;
         width: 100%;
-        // @include respond (android){
-        //   width:100%;
-        //   margin:0 auto;
-        // }
-        // @include respond (small-android){
-        //   width:100%;
-        //   margin:0 auto;
-        // }
-      
-   
+     
       .head { 
-        
         height: 15px;
         width: 50px;	
         color: rgba(0,0,0,0.61); 

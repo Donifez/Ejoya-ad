@@ -45,8 +45,9 @@ class Catalogue extends Component {
     </div>
 
     </div>
-    <div className="progress-container">
+    <div className="progress-contain">
       <h2>Uploaded Tracks</h2>
+      <button className="admin_Button">View All Tracks</button>
       <div className="progress-wrapper">
         <HistoryTable />
     </div>

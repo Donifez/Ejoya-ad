@@ -25,7 +25,7 @@ class Users extends Component {
     <div className="dashboard-card">
       <h3>35,000</h3>
       <h4>Total Users</h4>
-      <button className="viewUserBtn">View ALl Users</button>
+      <button className="viewUserBtn">View All Users</button>
     </div>
     <div className="dashboard-card">
       <h3>22,900</h3>
@@ -45,9 +45,9 @@ class Users extends Component {
 
     </div>
     <div className="progress-container">
-    <div className="dashHeading">
-      <h2>Users</h2>
-      <button className="adminButton">
+    <div className="dash_Heading">
+      <h2>Users Activity</h2>
+      <button className="admin_Button">
         View All Users Activities
       </button>
     </div>

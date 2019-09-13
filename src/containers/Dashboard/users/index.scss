@@ -117,6 +117,36 @@
       }
         .progress-container{
         margin-top:7rem;
+        .dash_Heading{
+          display:grid;
+      grid-template-columns:3fr 1fr;
+      h2{
+        margin-top:0rem;
+        @include respond (android){
+          margin-top:-1rem;
+        }
+      }
+      @include respond (android){
+        grid-template-columns: 0.5fr;
+      }
+        .admin_Button{
+          box-sizing: border-box;
+          height: 48px;
+          width: 208px;
+          border: 1px solid #D4DEE2;
+          border-radius: 4px;
+          background-color: #F2F5F6;
+          font-family: var(--default-font);
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 16px;
+          text-align: center;
+          color:black;
+          @include respond(android){
+            width: 5rem;
+          }
+        }
+      }
           
         .progress-wrapper{
           margin-top:3rem;
