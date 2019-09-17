@@ -10,7 +10,7 @@ export default () => (
 		<div className="mainContent">
 				<div className="artistDetails">
           <div className="artistInfo">
-            <h1>Pending Users(30)</h1>
+            <h1>Pending Releases(30)</h1>
           </div>
           <input type="text" className="searchInput" placeholder="Search User Activity" />
         </div>

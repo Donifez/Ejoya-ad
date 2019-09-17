@@ -27,7 +27,7 @@ class Table extends React.Component {
          const artistName=<span className="artistBold">Artist Name</span>
          const { description, date,   amount, region } = detail 
          return (
-            <tr className="otherInfo">
+            <tr className="otherInfo-trans">
                <td >{artistName} {description} <span className="italized"> Ejoya Premium</span></td>
                <td> {date}</td>
                

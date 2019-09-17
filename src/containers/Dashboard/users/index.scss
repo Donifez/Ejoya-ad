@@ -38,9 +38,9 @@
               }
          
         button.adminButton {
-          padding:1.7rem 4.5rem;
+          // padding:1.7rem 2rem;
           // float:right;
-          font-size:1.6rem;
+          font-size:1.3rem;
           font-weight:600;
           cursor:pointer;
           font-family:var(--default-font);
@@ -48,6 +48,8 @@
           border-radius: 0.4rem;
           background-color: #000000;
           color:#ffff;
+          width:208px;
+          height:48px;
                   
         }
       }
@@ -155,7 +157,7 @@
           grid-gap:.1rem;
           
         }
-        .infoTable{
+        .infoTable_{
           width:100%;
           margin-left:0;
         }

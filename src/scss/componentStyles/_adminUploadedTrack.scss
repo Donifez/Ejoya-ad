@@ -180,7 +180,11 @@
   margin-left:0.2rem;
   border-radius:0.3rem;
 }
-td.amount
-{
-  font-size:0.1rem;
+.otherInfo{
+  height: 16px;
+  width: 145px;
+  color: #000000;
+  font-family: var(--default-font);
+  font-size: 13px;
+  line-height: 16px;
 }

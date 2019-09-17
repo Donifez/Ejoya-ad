@@ -69,7 +69,7 @@ line-height: 36px;
 }
 .infoTable_ {
   font-family:var(--default-font);
-	width:95%;
+	width:98%;
 	border: 1px solid rgba(212,222,226,0.31);
 	border-radius: 4px;
 	background-color: #FFFFFF;
@@ -84,7 +84,7 @@ line-height: 36px;
     width:90%;
   }
 .detailsTit{
-    font-family: Montserrat;
+    font-family:var(--default-font);
     font-size: 12px;
     font-weight: 500;
    letter-spacing: 1.71px;	
@@ -97,7 +97,8 @@ line-height: 36px;
   color:var(	--grey-color-1);
   padding:2rem 3rem;
   font-weight:500;
-  font-size:1.8rem;
+  font-size:1.2rem;
+  font-family:var(--default-font);
   border-bottom:1px solid #D4DEE2;
   @include respond(android-phone) {
     padding:0.4rem;
@@ -151,3 +152,23 @@ box-shadow: 0 2px 14px 0 rgba(116,119,120,0.09);
   margin:1.5rem auto;
 }
 }
+
+.otherInfo_users{
+  height: 16px;
+    width: 17px;
+    color: #000000;
+    font-family: var(--default-font);
+    font-size: 13px;
+    line-height: 16px;
+}
+// .tableTitle_users{
+//   height: 15px;
+//   width: 98px;
+//   color: rgba(0,0,0,0.61);
+//   font-family: var(--default-font);
+//   font-size: 12px;
+//   font-weight: 500;	
+//   letter-spacing: 1.71px;
+//   line-height: 15px;
+  
+// }

@@ -24,7 +24,7 @@ class Table extends React.Component {
          const cps=<div className="cps"/>
          const { Description, date, region } = detail 
          return (
-            <tr className="otherInfo">
+            <tr className="otherInfo_users">
                <td><span className="artistBold">Artist Name </span>{Description}</td>
                <td>{date}</td>
                <td>{region}</td>
@@ -39,7 +39,7 @@ class Table extends React.Component {
          <div>
             <table className='infoTable_'>
                <tbody>
-                  <tr className="detailsTit">{this.renderTableHeader()}</tr>
+                  <tr className="detailsTit_users">{this.renderTableHeader()}</tr>
                   {this.renderTableData()}
                </tbody>
             </table>

@@ -26,13 +26,13 @@ class Table extends React.Component {
          const playTime=<span className="darkBtn">3:50</span>
          const { name, artist, uploaded, plays, amount, region } = detail 
          return (
-            <tr className="otherInfo">
+            <tr className="other_Info">
                <td ><span className="artistBold">{name} </span>{playTime}</td>
              
                <td> <span className="artistBold">{artist}</span></td>
                <td>{uploaded}</td>
                <td className="amount">{amount}</td>
-               <td>{plays}</td>
+               <td className="plays">{plays}</td>
                <td>{region}</td>
             </tr>
          )
@@ -44,7 +44,7 @@ class Table extends React.Component {
          <div>
             <table className='infoTable'>
                <tbody>
-                  <tr className="detailsTitle">{this.renderTableHeader()}</tr>
+                  <tr className="d_etailsTitle">{this.renderTableHeader()}</tr>
                   {this.renderTableData()}
                </tbody>
             </table>

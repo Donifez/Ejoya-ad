@@ -5,11 +5,11 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            {description: 'paid to',  date: "Sep 18, 2018 by 11:26 PM", amount:"$20",  region: "Adelaide, Astralia" },
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", amount:"$20",  region: "Adelaide, Astralia" },
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", amount:"$20",  region: "Adelaide, Astralia"},
-            {description: 'paid to', date :"Sep 18, 2018 by 11:26 PM", amount:"$20",  region: "Adelaide, Astralia" },
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", amount:"$20",  region: "Adelaide, Astralia" }
+            {description: 'paid to',  date: "Sep 18, 2018 by 11:26 PM",region: "Adelaide, Astralia", amount:"$20" },
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20" },
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20"},
+            {description: 'paid to', date :"Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia",  amount:"$20"},
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20" }
             
          ]
       }
@@ -25,13 +25,13 @@ class Table extends React.Component {
    renderTableData() {
       return this.state.details.map((detail, index) => {
          const artistName=<span className="artistBold">Artist Name</span>
-         const { description, date, amount,  region } = detail 
+         const { description, date,region, amount } = detail 
          return (
             <tr className="otherInfo">
                <td >{artistName} {description} <span className="italized" > name@mail.com</span></td>
                <td> {date}</td>
-               <td className="centerBold">{amount}</td>
                <td className="region">{region}</td>
+               <td className="centerBold">{amount}</td>
             </tr>
          )
       })
