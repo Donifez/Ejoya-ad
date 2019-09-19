@@ -113,7 +113,8 @@
     margin-left:25rem;
   }
   @include respond(phone){
-    margin-left:2rem;
+    margin-left:9rem;
+    margin-top: 8rem;
   }
   }
   
@@ -135,6 +136,7 @@
     }
     @include respond(phone) {
       margin:0 auto;
+      margin-top:2rem;
       width:100%;
     }
     @include respond(small-android){

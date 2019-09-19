@@ -133,11 +133,12 @@
           @include respond (tab-port){
             margin-left: 48rem;
           }
-          @include respond (android){
-            margin-left: 48rem;
+          @include respond (phone){
+            margin-left: 5rem;
+            margin-top:6rem;
           }
           @include respond (small-android){
-            margin-right: 0 auto;
+            margin-left: 5rem;
           }
         }
         .progress-wrapper{
