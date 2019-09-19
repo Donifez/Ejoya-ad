@@ -1,5 +1,13 @@
 @import '../abstracts/mixins';
 
+
+
+.admin_Button{
+  @include respond (phone){
+    margin-left:-23rem;
+    margin-top:4rem;
+  }
+}
 .artistDetails{
   margin:0 auto;
   margin-left:4.2rem;
@@ -53,13 +61,30 @@
   // margin-top:0;
   // font-family:var(--font-display-2)
   // }
+
+  .dash_Heading{
+    @include respond(phone){
+      margin-left:5rem;
+    }
+    @include respond(small-android){
+      font-size:0.7rem;
+      margin-left:2rem;
+    }
+  }
   .transactionh1{
+    
     font-size:3.4rem;
     font-weight: 300;
     padding-top:0;
-    margin-top:0;
+    // margin-top:0;
     font-family:var(--font-display-2);
     margin-left:3rem;
+    position:relative;
+    top:7rem;
+    @include respond(phone){
+      left:3rem;
+    }
+    
   }
   .artistInfo h5{
     font-size:1.8rem;
@@ -67,6 +92,29 @@
 
     font-style:italic;
     font-family:var(--default-font)
+  }
+  .view_all{
+    
+ margin-top:19.2rem;
+    box-sizing: border-box;
+    height: 48px;
+   width: 208px;
+    border: 1px solid #D4DEE2;
+  border-radius: 4px;	
+  background-color: #F2F5F6;
+  color: #000000;
+  font-family: var(--default-font);
+  font-size: 13px;
+  font-weight: 600;
+  @include respond(tab-land){
+    margin-left:32rem;
+  }
+  @include respond(tab-port){
+    margin-left:25rem;
+  }
+  @include respond(phone){
+    margin-left:2rem;
+  }
   }
   
   .info {
@@ -79,7 +127,7 @@
     box-shadow: var(	--box-shadow-1);
       border-collapse: collapse;
     margin:0 auto;
-    margin-top:4.2rem;
+    margin-top:7.2rem;
      margin-left:4.2rem;
      @include respond(tab-land) {
       width:90vw;

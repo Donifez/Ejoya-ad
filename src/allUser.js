@@ -43,7 +43,7 @@ class AllUser extends Component {
       <td>20</td>
       <td>$4000</td>
       <td>Adelaide, Australia</td>
-      <td>IMAGE</td>
+      <td><span class="dot"></span></td>
     </tr>
     <tr>
     <td><img className="side" src={Image}/></td>
@@ -52,7 +52,7 @@ class AllUser extends Component {
       <td>20</td>
       <td>$4000</td>
       <td>Adelaide, Australia</td>
-      <td>IMAGE</td>
+      <td><span class="dot"></span></td>
     </tr>
     <tr>
     <td><img className="side" src={Image}/></td>
@@ -61,7 +61,7 @@ class AllUser extends Component {
       <td>20</td>
       <td>$4000</td>
       <td>Adelaide, Australia</td>
-      <td>IMAGE</td>
+      <td><span class="dot"></span></td>
     </tr>
     <tr>
     <td><img className="side" src={Image}/></td>
@@ -70,7 +70,7 @@ class AllUser extends Component {
       <td>20</td>
       <td>$4000</td>
       <td>Adelaide, Australia</td>
-      <td>IMAGE</td>
+      <td><span class="dot"></span></td>
     </tr>
     <tr>
     <td><img className="side" src={Image}/></td>
@@ -79,7 +79,7 @@ class AllUser extends Component {
       <td>20</td>
       <td>$4000</td>
       <td>Adelaide, Australia</td>
-      <td>IMAGE</td>
+      <td ><span class="dot"></span></td>
     </tr>
   </table>
 </div>

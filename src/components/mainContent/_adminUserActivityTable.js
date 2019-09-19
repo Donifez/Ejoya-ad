@@ -20,7 +20,9 @@ class Table extends React.Component {
    }
 
    renderTableData() {
+      
       return this.state.details.map((detail, index) => {
+        
          const cps=<div className="cps"/>
          const { Description, date, region } = detail 
          return (

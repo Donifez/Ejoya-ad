@@ -39,6 +39,13 @@
           font-size: 36px;
           font-weight: 300;
           line-height: 36px;
+          @include respond (tab-land){
+            margin-left:10rem;
+          }
+          @include respond (phone){
+            margin-left:1rem;
+            font-size:22px;
+          }
         }
        
          

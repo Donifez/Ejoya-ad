@@ -108,6 +108,7 @@ h2{
       margin-top:7rem;
           .stats-wrapper{
             display:grid;
+            // grid-template-columns: 1fr 1fr;
             grid-template-columns: repeat( auto-fill, minmax(20rem, 1fr) );
             margin-top:5rem;
             grid-gap:1rem;
@@ -154,10 +155,11 @@ h2{
       .progress-wrapper{
         margin-top:5rem;
         display:grid;
-        grid-template-columns:3.5fr 1fr;
+        grid-template-columns:3.5fr 2fr;
         grid-gap:.5rem;
         .progress-graph {
           height: 25rem;
+         
           display:grid;
           grid-template-columns:3fr 1fr;
           border: 1px solid rgba(212,222,226,0.31);
@@ -190,15 +192,17 @@ h2{
             padding-left:2rem;
             font-size:1.3rem;
             margin-bottom:5rem;
+            
             .downCaret{
               padding-left:0.5rem;
+              
               cursor:pointer;
             }
           }
         }
         .progress-pie {
           height: 25rem;
-         
+          align-items:center;
           border: 1px solid rgba(212,222,226,0.31);
           border-radius: 4px;
           background-color: #FFFFFF;

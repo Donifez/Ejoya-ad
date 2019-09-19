@@ -1,11 +1,11 @@
 import React, {Component}from "react";
 import "./dashboard.scss";
 import "../../../scss/base/_base.scss";
-import {FaArrowRight, FaCaretDown, FaMusic} from "react-icons/fa";
+import {FaArrowRight, FaCaretDown, FaMusic, } from "react-icons/fa";
 import Chart from "./Chart";
 import PieChart from "./Pie";
-// import NigerianMap from "/inspect/nigeria.svg"
-
+// import  from "/inspect/nigeria.svg"
+import Image from "../../../images/2images.png";
 class ChartIndex extends Component {
 
   render() {
@@ -51,7 +51,7 @@ class ChartIndex extends Component {
         <div className="progress-graph">
           <div>
             <div className="graphLabel">
-              <p>Users <FaCaretDown className="downCaret" /></p>
+              <p> <strong>Users </strong><FaCaretDown className="downCaret" /></p>
             </div>
             <Chart  /> 
           </div>
@@ -103,7 +103,8 @@ class ChartIndex extends Component {
           <p>Most Popular</p>
         </div>
         <div className="stats-card">
-        <img src="/inspect/Rectangle 7.png" className="statsThumb" />
+        {/* <img src="/inspect/Rectangle 7.png" className="statsThumb" /> */}
+        <img className="statsThumb"  src={Image}/>
         <p className="bold-p">Song Title</p>
           <p>Best Performing Song</p>
         </div>
