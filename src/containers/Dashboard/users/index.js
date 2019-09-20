@@ -23,9 +23,9 @@ class Users extends Component {
     </div>
     <div className="dashboard-card-wrapper">
     <div className="dashboard-card">
-      <h3>35,000</h3>
+      <h3>33,082</h3>
       <h4>Total Users</h4>
-      <button className="viewUserBtn">View All Users</button>
+      <button className="viewUserBtn">View Admin Users</button>
     </div>
     <div className="dashboard-card">
       <h3>22,900</h3>

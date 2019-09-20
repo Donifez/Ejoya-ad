@@ -81,7 +81,8 @@
     }
     @include respond(phone) {
       margin:0 auto;
-      width:100vw;
+      width:100%;
+      font-size:1.3rem
     }
     @include respond(small-android){
       margin:0 auto;
@@ -123,7 +124,7 @@
       padding:.2rem;
     }
   }
-  .infoTable td{
+  .o_therInfo td{
     font-size:1.6rem;
     text-align:left;
     padding:2rem 2rem;
@@ -141,11 +142,12 @@
 
     }
     @include respond(phone) {
-     
+      padding:1rem;
       font-size:1.3rem;
       width:100%;
     }
      @include respond(android-phone) {
+      padding:1rem;
       margin:0 auto;
       font-size:1.3rem;
       width:100%;

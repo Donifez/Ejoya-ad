@@ -4,11 +4,11 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            {name: 'Song Name',  artist:"Mike Abdul", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Onyeka", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Davido", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia"},
-            {name: 'Song Name', artist:"Olamide", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Phyno", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" }
+            {name: 'Song Name',  artist:"Mike Abdul", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Australia" },
+            {name: 'Song Name', artist:"Onyeka", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Australia" },
+            {name: 'Song Name', artist:"Davido", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Australia"},
+            {name: 'Song Name', artist:"Olamide", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Australia" },
+            {name: 'Song Name', artist:"Phyno", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Australia" }
             
          ]
       }
@@ -26,7 +26,7 @@ class Table extends React.Component {
          const playTime=<span className="darkBtn">3:50</span>
          const { name, artist, uploaded, plays, amount, region } = detail 
          return (
-            <tr className="other_Info">
+            <tr className="o_therInfo">
                <td ><span className="artistBold">{name} </span>{playTime}</td>
              
                <td> <span className="artistBold">{artist}</span></td>

@@ -124,11 +124,11 @@ font-family: var(--font-display-2);
   //  } 
 
   @include respond(tab-land){
-    // padding:0.1rem 0.2rem;
+   
     font-size:1rem;
   }
-  @include respond (android-phone){
-    padding:0.1rem 0rem;
+  @include respond (phone){
+    padding:0.5rem 0.2rem;
     font-size:1rem;
   }
    @include respond (small-android){

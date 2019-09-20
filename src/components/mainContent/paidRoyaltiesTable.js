@@ -5,11 +5,11 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            {description: 'paid to',  date: "Sep 18, 2018 by 11:26 PM",region: "Adelaide, Astralia", amount:"$20" },
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20" },
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20"},
-            {description: 'paid to', date :"Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia",  amount:"$20"},
-            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", amount:"$20" }
+            {description: 'paid to',  date: "Sep 18, 2018 by 11:26 PM",region: "Adelaide, Australia", amount:"$20" },
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", amount:"$20" },
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", amount:"$20"},
+            {description: 'paid to', date :"Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia",  amount:"$20"},
+            {description: 'paid to', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", amount:"$20" }
             
          ]
       }
@@ -30,7 +30,7 @@ class Table extends React.Component {
             <tr className="otherInfo">
                <td >{artistName} {description} <span className="italized" > name@mail.com</span></td>
                <td> {date}</td>
-               <td className="region">{region}</td>
+               <td className="re_gion">{region}</td>
                <td className="centerBold">{amount}</td>
             </tr>
          )

@@ -4,11 +4,11 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            {name: 'Song Name',  artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia","":"" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia","":"button" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia","":"button"},
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia","":"button" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia","":"button" }
+            {name: 'Song Name',  artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia","":"" },
+            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia","":"button" },
+            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia","":"button"},
+            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia","":"button" },
+            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia","":"button" }
             
          ]
       }

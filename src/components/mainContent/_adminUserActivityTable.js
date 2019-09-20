@@ -4,10 +4,10 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: "" },
-            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
-            {  Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
-            { Description:  'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""}
+            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", CPS: "" },
+            { Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", CPS: ""},
+            {  Description: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", CPS: ""},
+            { Description:  'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Australia", CPS: ""}
          ]
       }
    }
